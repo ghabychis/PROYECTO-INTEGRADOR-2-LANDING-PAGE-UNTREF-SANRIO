@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de los Productos</title>
+    <link type="image/png" rel="icon" href="img/logo sanrio 3.png">
+    <!-- Incluye la biblioteca Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Estilos para la tarjeta de producto -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body style="background-image: url('img/sanrio_0.jpg');">
+    <header class="header">
+      <img id="logo" class="título" src="img/titulo sanrio 1.png" alt="Logo">
+      <img id="logo" class="título-claro" src="img/titulo sanrio-claro.png" alt="Logo Claro">
+      <nav class="navbar">
+          <form class="btn-nav">
+            <button class="btn" type="button"><a href="index.html">Inicio</a></button>
+            <button class="btn" type="button"><a href="index.html#nosotros">Nosotros</a></button>
+            <button class="btn" type="button"><a href="index.html#productos">Productos</a></button>
+            <button class="btn" type="button"><a href="index.html#contacto">Contacto</a></button>
+          </form>
+          <button id="boton" onclick="cambioDeModo()">Modo Oscuro</button> <!-- Botón de cambio de modo -->
+      </nav>
+    </header>
+
+    <main>
+      <div class="producto_contenedor"></div>
+      <div class="botones">
+        <a href="index.html#productos" class="btn" id="btn">Volver</a>
+    
+      </div>
+    </main>
+
+    <div class="container">
+    </div>
+     <button  class="btn-scrolltop" id="btn_scrolltop">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="w-6 h-6">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+       </svg>    
+     </button>
+
+    <footer class="footer">
+      <p>Gabriela Shimabukuro - &copy; 2023 Sanrio Store</p>
+      <img id="img-footer" src="img/img-footer claro.png" alt="luffy">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluye la biblioteca Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script _product.js"></script>
+  </body>
+</html>

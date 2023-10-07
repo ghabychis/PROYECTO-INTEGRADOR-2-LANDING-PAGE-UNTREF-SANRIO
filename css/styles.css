@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: 'HelloCursiva';
+    src: url('Font/Boldins.ttf') format('truetype');}
+
+
+
+/* Estilos generales */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el contenido */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+}
+
+header {
+    background-color: #d6f6ff;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    color: #ffffff;
+    font-size: 30px; /* Cambia el tamaño de la letra */
+    padding: 20px;
+    text-align: center;
+    border: #ffffff;
+}
+
+.título-claro {
+    display: none;
+}
+
+#logo {
+    width: 80vw;
+}
+
+/* Estilos para los botones del nav*/
+.btn {
+    background-color: #007bff;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+nav form a {
+    font-size: 125%;
+    text-decoration: none;
+    color: black;
+    font-family: "Belanosima" !important;
+    display: block;
+    width: 90px;
+}
+
+
+#btn {
+    font-size: 125%;
+    text-decoration: none;
+    color: black;
+    font-family: "Belanosima" !important;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-general {
+    margin: 20px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    text-shadow: 0 0 10px #ff759c;
+}
+
+p {
+    line-height: 1.3;
+}
+
+/*Firma*/
+p span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+p span img {
+    vertical-align: middle;
+    width: 5rem;
+}
+
+/* Estilo para el hr con la estrella en el medio */
+.hr-con-estrella {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(to right, #007bff, #ff759c , #007bff);
+    margin: 20px 0;
+    border: 1px dotted #ffffff;
+    box-shadow: 0 0 3px #000000;
+    overflow: visible;
+  }
+.hr-con-estrella:before {
+    content: "⭐";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0 0 0 -3px;
+    font-size: 20px;
+    line-height: 0;
+    text-shadow: 0 0 3px #000000;
+  }
+
+
+
+
+/* Para pantalla de escritorio */
+@media screen and (min-width: 812px) {
+    #products {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        width: 50vw;
+    }
+
+    .main-productos {
+        padding: 10px !important;
+        margin: 0px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+    }
+
+    .product-card {
+        width: 300px !important;
+        height: 350px !important;
+        margin: 10px !important;
+    }
+
+   
+    
+
+    .footer {
+        text-align: center;
+        height: 140px;
+    }
+
+    #img-footer{
+        width: 100px;
+        float: right;/* Alinea la imagen a la derecha */
+        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor padre */
+        display: block !important;
+        padding-right: 10px;
+    }
+    
+}
+
+/* Estilos para la tarjeta de producto */
+    .product-card {
+        border: 3px solid #ff759c;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        width: 70vw;
+      }
+  
+      /* Estilos para las imágenes del carrusel */
+      .product-images {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border-width: 3px;
+        border-style: double;
+        border-color: #ff759c;
+        border-radius: 8px;
+        width: 100%;
+      }
+      .product-images img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+      }
+      
+.product-card h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #1778df;
+    font-size:18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.product-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.product-card a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/*Contacto*/
+
+.main-contacto {
+    margin: 20px !important;
+    padding: 10px !important;
+    width: 97% !important;
+    box-sizing: border-box !important;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto a {
+    color: rgb(0, 0, 0);
+}
+
+.redes a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes img{
+    vertical-align: middle;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.conts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color:#ff759c ;
+    color: #fff;
+    font-family: 'HelloCursiva', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+footer p {
+    display: inline;
+    margin: 0;
+}
+
+#img-footer{
+    display: none
+  
+}
+
+/* Botón Modo oscuro */
+#boton{
+    position: fixed; /* Fija la barra de navegación en la ventana del navegador */
+    top: 10px;
+    right: 10px; /* Coloca la barra de navegación en el lado derecho */
+    border: 3px solid #ffffff;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    z-index: 1;
+}
+#boton:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Modo oscuro */
+
+body.dark-mode {
+    color: white;
+}
+
+body.dark-mode #boton {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode #boton:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+body.dark-mode main {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode h2 {
+    text-shadow: 0 0 10px #4c1a70;
+}
+
+body.dark-mode .contacto a {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode .redes a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-mode .hr-con-estrella{
+    border: 1px dotted #000000;
+    box-shadow: 0 0 3px #ffffff;
+}
+
+body.dark-mode .hr-con-estrella:before {
+    -webkit-text-stroke: #000000 1px;
+    text-shadow: 0 0 3px #ffffff;
+}
+
+body.dark-mode .product-card {
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .product-card a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .header {
+    background-color: #000000 !important;
+    
+}
+
+body.dark-mode .título {
+    display: none;
+}
+
+body.dark-mode .título-claro {
+    display: inline;
+}
+
+body.dark-mode .footer {
+    background-color: #000000 !important;
+}
+
+/*Boton hacia arriba*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+svg{
+    width: 15px;
+    height: 15px;
+ }
+
+.btn-scrolltop{
+    position: fixed;
+    bottom: 152px;
+    right: 10px;
+    border: 1px solid white;
+    background:#d6f6ff ;
+    cursor: pointer;
+    color: #ff759c;
+    padding: 15px 20px;
+    border-radius: 100%;
+    transform: translateY(100px);
+    transition: 0.3s;
+    transform: scale(0);
+ }
+
+ .btn_scroll-on{
+    transform: translateY(0);
+ }
